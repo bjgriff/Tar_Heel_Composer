@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="625.0" prefWidth="625.0" style="-fx-background-color: #7BAFD4;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainWindowController">
+   <children>
+      <Label fx:id="title" alignment="TOP_CENTER" layoutY="14.0" text="Tar Heel Composer" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <VBox spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label text="Instructions: ">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="instruction_text" editable="false" focusTraversable="false" prefHeight="150.0" prefWidth="200.0" text=" " />
+            <GridPane alignment="CENTER" gridLinesVisible="true">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="75.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="35.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="35.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="35.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="35.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="35.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="35.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="35.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="35.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="40.0" />
+                <RowConstraints minHeight="10.0" prefHeight="40.0" />
+              </rowConstraints>
+               <children>
+                  <Label prefHeight="40.0" text="Note">
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </Label>
+                  <Label prefHeight="40.0" text="Chord" GridPane.rowIndex="1">
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="note0" alignment="CENTER" contentDisplay="CENTER" prefHeight="40.0" prefWidth="60.0" text="?" GridPane.columnIndex="1" />
+                  <Label fx:id="chord0" alignment="CENTER" contentDisplay="CENTER" prefHeight="40.0" prefWidth="60.0" text="?" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label fx:id="note1" alignment="CENTER" contentDisplay="CENTER" prefHeight="40.0" prefWidth="60.0" text="?" GridPane.columnIndex="2" />
+                  <Label fx:id="chord1" alignment="CENTER" contentDisplay="CENTER" prefHeight="40.0" prefWidth="60.0" text="?" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <Label fx:id="note2" alignment="CENTER" contentDisplay="CENTER" prefHeight="40.0" prefWidth="60.0" text="?" GridPane.columnIndex="3" />
+                  <Label fx:id="chord2" alignment="CENTER" contentDisplay="CENTER" prefHeight="40.0" prefWidth="60.0" text="?" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <Label fx:id="note3" alignment="CENTER" contentDisplay="CENTER" prefHeight="40.0" prefWidth="60.0" text="?" GridPane.columnIndex="4" />
+                  <Label fx:id="chord3" alignment="CENTER" contentDisplay="CENTER" prefHeight="40.0" prefWidth="60.0" text="?" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                  <Label fx:id="note4" alignment="CENTER" contentDisplay="CENTER" prefHeight="40.0" prefWidth="60.0" text="?" GridPane.columnIndex="5" />
+                  <Label fx:id="chord4" alignment="CENTER" contentDisplay="CENTER" prefHeight="40.0" prefWidth="60.0" text="?" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                  <Label fx:id="note5" alignment="CENTER" contentDisplay="CENTER" prefHeight="40.0" prefWidth="60.0" text="?" GridPane.columnIndex="6" />
+                  <Label fx:id="note6" alignment="CENTER" contentDisplay="CENTER" prefHeight="40.0" prefWidth="60.0" text="?" GridPane.columnIndex="7" />
+                  <Label fx:id="note7" alignment="CENTER" contentDisplay="CENTER" prefHeight="40.0" prefWidth="60.0" text="?" GridPane.columnIndex="8" />
+                  <Label fx:id="chord5" alignment="CENTER" contentDisplay="CENTER" prefHeight="40.0" prefWidth="60.0" text="?" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+                  <Label fx:id="chord6" alignment="CENTER" contentDisplay="CENTER" prefHeight="40.0" prefWidth="60.0" text="?" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+                  <Label fx:id="chord7" alignment="CENTER" contentDisplay="CENTER" prefHeight="40.0" prefWidth="60.0" text="?" GridPane.columnIndex="8" GridPane.rowIndex="1" />
+               </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </GridPane>
+            <HBox alignment="TOP_CENTER">
+               <children>
+                  <ImageView fitHeight="174.0" fitWidth="510.0" pickOnBounds="true" preserveRatio="true">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <image>
+                        <Image url="@../pic.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="BOTTOM_CENTER" spacing="20.0">
+               <children>
+                  <Button fx:id="button1" layoutX="171.0" layoutY="187.0" mnemonicParsing="false" onKeyPressed="#button1EnterPressed" onMouseClicked="#button1Pressed" prefWidth="50.0" text="1" />
+                  <Button fx:id="button2" mnemonicParsing="false" onKeyPressed="#button2EnterPressed" onMouseClicked="#button2Pressed" prefWidth="50.0" text="2" />
+                  <Button fx:id="button3" mnemonicParsing="false" onKeyPressed="#button3EnterPressed" onMouseClicked="#button3Pressed" prefWidth="50.0" text="3" />
+                  <Button fx:id="button4" mnemonicParsing="false" onKeyPressed="#button4EnterPressed" onMouseClicked="#button4Pressed" prefWidth="50.0" text="4" />
+               </children>
+               <padding>
+                  <Insets bottom="20.0" top="10.0" />
+               </padding>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="20.0" right="20.0" top="70.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>
